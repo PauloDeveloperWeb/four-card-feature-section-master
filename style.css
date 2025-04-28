@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Aplicar Poppins */
+    
+}
+
+.container{
+    width: 90vw;
+    height: 100vh;
+    margin-top: 3rem;  
+    padding: 0;   
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap:1vh;     
+}
+
+.container > *{
+    margin: 0;
+}
+
+.text{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+               
+  }
+  p{
+    width: 30vw;
+    text-align: center;
+    margin-top: 1rem;
+  }
+h1{
+    font-size: 2.2rem;
+    color: hsl(212, 6%, 44%);
+    font-weight: 300;  
+}
+
+
+.cruz-grid {
+    width: 90vw;
+    height: 100vh;
+    display: grid;
+    margin-bottom: 5vh;
+    font-family: 'Poppins', sans-serif; /* Aplicar Poppins */        
+    grid-template-columns: 1fr 0fr 1fr; 
+    grid-template-rows: auto auto auto;
+   
+}
+
+  .central{   
+    grid-row: span 2;   
+    display: grid;
+    place-items: center;
+    
+  }
+
+  
+  .central-1{   
+    display: grid;
+    place-items: center;    
+    margin-bottom: 5vw;
+  }
+
+  .left{    
+    display: grid;
+    place-items: center;
+    margin-left:2vw;
+    margin-right: 2vw;   
+  }
+
+  .right{    
+    grid-row: span 2;    
+    display: grid;
+    place-items: center;    
+  }
+
+  .primary{    
+    width: 22vw;
+    height: 27vh;
+    background-color:  hsl(0, 0%, 100%);    
+    border-top: 5px solid hsl(180, 62%, 55%);
+    justify-self: end;
+    margin-right: 1vw;
+    border-radius: 1.8%; 
+    box-shadow: 
+    10px 10px 10px -0px rgba(96, 49, 49, 0.1), /* Sombra à direita */
+    -10px 10px 10px -5px rgba(0, 0, 0, 0.1); /* Sombra à esquerda */
+
+  }
+  .direito{
+    width: 22vw;
+    height: 27vh;
+    background-color:  hsl(0, 0%, 100%);
+    border-top: 5px solid hsl(212, 86%, 64%);
+    margin-left: 1vw;    
+    justify-self: start;
+    border-radius: 1.8%; 
+    box-shadow: 
+    10px 10px 10px -5px rgba(0, 0, 0, 0.1), /* Sombra à direita */
+    -10px 10px 10px -5px rgba(0, 0, 0, 0.1); /* Sombra à esquerda */ 
+
+  }
+
+  .cent-1{
+    width: 22vw;
+    height: 27vh;
+    background-color:  hsl(0, 0%, 100%);
+    border-top: 5px solid hsl(34, 97%, 64%);    
+    justify-items: start;
+    align-items: center;
+    border-radius: 1.8%; 
+    box-shadow: 
+    10px 10px 10px -5px rgba(0, 0, 0, 0.1), /* Sombra à direita */
+    -10px 10px 10px -5px rgba(0, 0, 0, 0.1); /* Sombra à esquerda */ 
+
+  }
+
+  .esquerdo{
+    width: 22vw;
+    height: 27vh;
+    margin-top: 6vh;
+    background-color:  hsl(0, 0%, 100%);
+    border-top: 5px solid  hsl(0, 78%, 62%);   
+    justify-items: start;
+    align-items: center; 
+    border-radius: 1.8%;
+    margin-bottom: 3vh;  
+    box-shadow: 
+    10px 10px 10px -5px rgba(0, 0, 0, 0.1), /* Sombra à direita */
+    -10px 10px 10px -5px rgba(0, 0, 0, 0.1); /* Sombra à esquerda */
+  }
+
+h3{
+  color: hsl(234, 12%, 34%);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+
+  .text-grid{
+    width: 20vw;
+    margin-left: 1rem;
+    color: hsl(234, 12%, 34%);
+    font-family: 'Poppins', sans-serif; /* Aplicar Poppins */
+    font-size: 0.8rem;   
+    margin-top: 1rem;      
+  }
+
+
+  img{
+    margin-top: 5vh;
+    margin-left: 16vw;
+    width: 4.5vw;   
+  }
+
+  @media (max-width: 375px) {   
+    .container{
+      width: 90vw;      
+    }
+    h1{
+       font-size:1.5rem;       
+       width: 100vw; 
+    }
+    p{    
+      width: 90%;
+      font-size: 0.8rem;
+    }
+    
+    .cruz-grid {
+      width: 100vw;
+      flex-direction: column;    
+      display: flex;     
+      margin-bottom: 5vh;
+      font-family: 'Poppins', sans-serif; /* Aplicar Poppins */    
+  }
+
+  .central, .left, .right, .central-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+.primary, .esquerdo,.direito, .cent-1 {    
+  width: 90vw;
+  height: 15rem;  
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column; 
+   justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.text-grid{
+  width: 75%;    
+}
+.img{
+width: 15%;
+margin-left: 55vw;
+}
+
+  }
+
