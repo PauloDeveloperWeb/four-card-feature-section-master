@@ -165,7 +165,7 @@ h3{
     width: 4.5vw;   
   }
 
-  @media (max-width: 375px) {   
+  @media (max-width: 768px) {   
     .container{
       width: 90vw;      
     }
@@ -201,16 +201,6 @@ h3{
    justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 .text-grid{
   width: 75%;    
